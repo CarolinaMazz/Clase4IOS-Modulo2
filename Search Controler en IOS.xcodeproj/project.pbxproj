@@ -12,6 +12,7 @@
 		FB4C88F21E6F83800083C830 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4C88F01E6F83800083C830 /* Main.storyboard */; };
 		FB4C88F41E6F83800083C830 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB4C88F31E6F83800083C830 /* Assets.xcassets */; };
 		FB4C88F71E6F83800083C830 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB4C88F51E6F83800083C830 /* LaunchScreen.storyboard */; };
+		FB4C88FF1E6F847A0083C830 /* Dispositivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4C88FE1E6F847A0083C830 /* Dispositivo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FB4C88F31E6F83800083C830 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB4C88F61E6F83800083C830 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB4C88F81E6F83800083C830 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4C88FE1E6F847A0083C830 /* Dispositivo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispositivo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FB4C88F31E6F83800083C830 /* Assets.xcassets */,
 				FB4C88F51E6F83800083C830 /* LaunchScreen.storyboard */,
 				FB4C88F81E6F83800083C830 /* Info.plist */,
+				FB4C88FE1E6F847A0083C830 /* Dispositivo.swift */,
 			);
 			path = "Search Controler en IOS";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB4C88EF1E6F83800083C830 /* ViewController.swift in Sources */,
+				FB4C88FF1E6F847A0083C830 /* Dispositivo.swift in Sources */,
 				FB4C88ED1E6F83800083C830 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
