@@ -15,9 +15,26 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var dispositivos = Array<Dispositivo>()
     var dispositivosFiltrados = Array<Dispositivo>()
     
-    
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var txtBuscar: UITextField!
+    
+    
+    @IBAction func txtBuscarEdit(_ sender: AnyObject) {
+        let texto = txtBuscar.text
+        
+        dispositivosFiltrados = dispositivos.filter({ (dispositivo) -> Bool in
+            //connvertimos un numero a string para realizar la busqueda de numeros con un string
+            return ("\(dispositivo.precio)".contains(texto!) || dispositivo.nombre.lowercased().contains(texto!) || dispositivo.fabricacion.contains(texto!))
+            //return String(dispositivo.precio).contains(texto!)
+            
+            //return dispositivo.nombre.lowercased().contains(texto!)
+            
+        })
+        
+        tableView.reloadData()
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +42,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         SearchController.searchBar.placeholder = "Busqueda"
         SearchController.searchBar.prompt = "Titulo"
-        SearchController.searchBar.barTintColor = UIColor.cyan
-        
         SearchController.searchResultsUpdater = self
         tableView.tableHeaderView = SearchController.searchBar
         
